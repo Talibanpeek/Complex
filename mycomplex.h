@@ -1,3 +1,8 @@
+/*!
+    @file
+    @brief Header file class Complex
+*/
+
 #ifndef _MY_COMPLEX_H_
 #include <iostream>
 
@@ -5,8 +10,22 @@
 
 using namespace std;
 
+/*!
+    @brief Class complex number
+*/
+
 class Complex {
+
+        /*!
+            @brief Real sostavlyaushaya
+        */
+
         double Re;
+
+        /*!
+            @brief Image sostavlyaushaya
+        */
+
         double Im;
 
     public:
