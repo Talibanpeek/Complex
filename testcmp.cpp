@@ -13,8 +13,8 @@ int main() {                                        // Тестирование класса компл
     cout << "M * A = " << M * A << endl;
     cout << "M / 4.45 = "<< M / 4.45 << endl;
     Complex D;
-  	cout << "Enter complex number D = ";            // Создание коспелксного числа путём ввода его через консоль
-  	cin >> D;
+	cout << "Enter complex number D = ";            // Создание коспелксного числа путём ввода его через консоль
+	cin >> D;
     A += C + D;
     cout << "D = " << D << "\nA = " << A << endl;
     return 0;
