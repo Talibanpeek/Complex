@@ -1,13 +1,13 @@
-complex: mycomplex.o testcmp.o
-	g++ -o complex mycomplex.o testcmp.o
+bin/complex: bin/obj/mycomplex.o bin/obj/testcmp.o
+	g++ -o bin/complex bin/obj/mycomplex.o bin/obj/testcmp.o
 
-mycomplex.o: mycomplex.cpp mycomplex.h
-	g++ -c mycomplex.cpp
+bin/obj/mycomplex.o: mycomplex.cpp mycomplex.h
+	g++ -o bin/obj/mycomplex.o -c mycomplex.cpp
 
-testcmp.o: testcmp.cpp
-	g++ -c testcmp.cpp
+bin/obj/testcmp.o: testcmp.cpp
+	g++ -o bin/obj/testcmp.o -c testcmp.cpp
 
 clean:
-	del -f complex *.o
+	del bin\obj\*.o
 
 
