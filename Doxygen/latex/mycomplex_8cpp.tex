@@ -1,0 +1,142 @@
+\hypertarget{mycomplex_8cpp}{}\doxysection{Файл D\+:/\+TP/\+Complex/mycomplex.cpp}
+\label{mycomplex_8cpp}\index{D:/TP/Complex/mycomplex.cpp@{D:/TP/Complex/mycomplex.cpp}}
+
+
+File s opisaniem method class \mbox{\hyperlink{class_complex}{Complex}}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}mycomplex.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для mycomplex.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{mycomplex_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{mycomplex_8cpp_a0179f31b459f6f1363883c4d535abcdb}{operator$>$$>$}} (istream \&stream, \mbox{\hyperlink{class_complex}{Complex}} \&a\+Rval)
+\item 
+ostream \& \mbox{\hyperlink{mycomplex_8cpp_a242b89929e7cc17337eca6432f3e9e08}{operator$<$$<$}} (ostream \&stream, \mbox{\hyperlink{class_complex}{Complex}} \&a\+Rval)
+\item 
+\mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{mycomplex_8cpp_a4b1807e2221e04ba8661276644a7eacb}{operator+}} (const double \&a\+Lval, const \mbox{\hyperlink{class_complex}{Complex}} \&a\+Rval)
+\item 
+\mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{mycomplex_8cpp_ad9363d22ed922d55de7e817eddf90ec0}{operator-\/}} (const double \&a\+Lval, const \mbox{\hyperlink{class_complex}{Complex}} \&a\+Rval)
+\item 
+\mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{mycomplex_8cpp_aaa45d27f117b96926a67bb99a43d40bc}{operator$\ast$}} (const double \&a\+Lval, const \mbox{\hyperlink{class_complex}{Complex}} \&a\+Rval)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+File s opisaniem method class \mbox{\hyperlink{class_complex}{Complex}}. 
+
+
+
+См. определение в файле \mbox{\hyperlink{mycomplex_8cpp_source}{mycomplex.\+cpp}}
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{mycomplex_8cpp_aaa45d27f117b96926a67bb99a43d40bc}\label{mycomplex_8cpp_aaa45d27f117b96926a67bb99a43d40bc}} 
+\index{mycomplex.cpp@{mycomplex.cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!mycomplex.cpp@{mycomplex.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_complex}{Complex}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const double \&}]{a\+Lval,  }\item[{const \mbox{\hyperlink{class_complex}{Complex}} \&}]{a\+Rval }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{mycomplex_8cpp_source}{mycomplex.\+cpp}} строка \mbox{\hyperlink{mycomplex_8cpp_source_l00187}{187}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00187                                                                 \{}
+\DoxyCodeLine{00188     \mbox{\hyperlink{class_complex}{Complex}} Result;}
+\DoxyCodeLine{00189     Result.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}} = aLval * aRval.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}};}
+\DoxyCodeLine{00190     Result.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}} = aLval * aRval.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}};}
+\DoxyCodeLine{00191     \textcolor{keywordflow}{return} Result;}
+\DoxyCodeLine{00192 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mycomplex_8cpp_a4b1807e2221e04ba8661276644a7eacb}\label{mycomplex_8cpp_a4b1807e2221e04ba8661276644a7eacb}} 
+\index{mycomplex.cpp@{mycomplex.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!mycomplex.cpp@{mycomplex.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_complex}{Complex}} operator+ (\begin{DoxyParamCaption}\item[{const double \&}]{a\+Lval,  }\item[{const \mbox{\hyperlink{class_complex}{Complex}} \&}]{a\+Rval }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{mycomplex_8cpp_source}{mycomplex.\+cpp}} строка \mbox{\hyperlink{mycomplex_8cpp_source_l00173}{173}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00173                                                                 \{}
+\DoxyCodeLine{00174     \mbox{\hyperlink{class_complex}{Complex}} Result;}
+\DoxyCodeLine{00175     Result.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}} = aLval + aRval.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}};}
+\DoxyCodeLine{00176     Result.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}} =  aRval.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}};}
+\DoxyCodeLine{00177     \textcolor{keywordflow}{return} Result;}
+\DoxyCodeLine{00178 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mycomplex_8cpp_ad9363d22ed922d55de7e817eddf90ec0}\label{mycomplex_8cpp_ad9363d22ed922d55de7e817eddf90ec0}} 
+\index{mycomplex.cpp@{mycomplex.cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!mycomplex.cpp@{mycomplex.cpp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_complex}{Complex}} operator-\/ (\begin{DoxyParamCaption}\item[{const double \&}]{a\+Lval,  }\item[{const \mbox{\hyperlink{class_complex}{Complex}} \&}]{a\+Rval }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{mycomplex_8cpp_source}{mycomplex.\+cpp}} строка \mbox{\hyperlink{mycomplex_8cpp_source_l00180}{180}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00180                                                                 \{}
+\DoxyCodeLine{00181     \mbox{\hyperlink{class_complex}{Complex}} Result;}
+\DoxyCodeLine{00182     Result.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}} = aLval -\/ aRval.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}};}
+\DoxyCodeLine{00183     Result.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}} =-\/ aRval.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}};}
+\DoxyCodeLine{00184     \textcolor{keywordflow}{return} Result;}
+\DoxyCodeLine{00185 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mycomplex_8cpp_a242b89929e7cc17337eca6432f3e9e08}\label{mycomplex_8cpp_a242b89929e7cc17337eca6432f3e9e08}} 
+\index{mycomplex.cpp@{mycomplex.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!mycomplex.cpp@{mycomplex.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{stream,  }\item[{\mbox{\hyperlink{class_complex}{Complex}} \&}]{a\+Rval }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{mycomplex_8cpp_source}{mycomplex.\+cpp}} строка \mbox{\hyperlink{mycomplex_8cpp_source_l00166}{166}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00166                                                          \{}
+\DoxyCodeLine{00167     stream << aRval.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}};}
+\DoxyCodeLine{00168     \textcolor{keywordflow}{if}( !( aRval.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}} < 0 ) ) stream << \textcolor{charliteral}{'+'};}
+\DoxyCodeLine{00169     stream << aRval.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}} << \textcolor{charliteral}{'i'};}
+\DoxyCodeLine{00170     \textcolor{keywordflow}{return} stream;}
+\DoxyCodeLine{00171 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mycomplex_8cpp_a0179f31b459f6f1363883c4d535abcdb}\label{mycomplex_8cpp_a0179f31b459f6f1363883c4d535abcdb}} 
+\index{mycomplex.cpp@{mycomplex.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!mycomplex.cpp@{mycomplex.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{stream,  }\item[{\mbox{\hyperlink{class_complex}{Complex}} \&}]{a\+Rval }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{mycomplex_8cpp_source}{mycomplex.\+cpp}} строка \mbox{\hyperlink{mycomplex_8cpp_source_l00160}{160}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00160                                                          \{}
+\DoxyCodeLine{00161     \textcolor{keywordtype}{char} tmp[256];}
+\DoxyCodeLine{00162     stream >> aRval.\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}} >> aRval.\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}} >> tmp;}
+\DoxyCodeLine{00163     \textcolor{keywordflow}{return} stream;}
+\DoxyCodeLine{00164 \}}
+
+\end{DoxyCode}

@@ -1,18 +1,38 @@
+/*!
+    @file
+    @brief File s opisaniem method class Complex
+*/
+
 #include <iostream>
 #include <cmath>
 #include "mycomplex.h"
 
 using namespace std;
 
+/*!
+    @brief Construktor class
+    @param aRe destvitel'naya chast'
+    @param aIm mnimaya sostavlyaushaya
+*/
+
 Complex::Complex( double aRe, double aIm ) {
     Re = aRe;
     Im = aIm;
 }
 
+/*!
+    @brief Construktor class
+    @param aRval complex number'
+*/
+
 Complex::Complex( const Complex& aRval ) {
     Re = aRval.Re;
     Im = aRval.Im;
 }
+
+/*!
+    @brief Destruktor class
+*/
 
 Complex::~Complex() {
     Re = 0.0;
@@ -23,6 +43,11 @@ void Complex::Set( double aRe, double aIm ) {
     Re = aRe;
     Im = aIm;
 }
+
+/*!
+    @brief Return modul' complex number
+    @return Modul' complex number
+*/
 
 Complex::operator double() {
     return abs();
